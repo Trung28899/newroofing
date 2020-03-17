@@ -15,8 +15,8 @@ body {
 
 /* NAVIGATION */
 /* background fading the bar*/
-#home p{
-  margin: 0.225rem 0.225rem; 
+#home p {
+  margin: 0.225rem 0.225rem;
   font-size: 1rem;
 }
 
@@ -102,11 +102,11 @@ body {
   font-size: 1.2rem;
 }
 
-.narrow a{
-  padding: 1rem 0.75rem; 
+.narrow a {
+  padding: 1rem 0.75rem;
 }
 
-.narrow img{
+.narrow img {
   margin-bottom: 4.9rem;
 }
 
@@ -117,7 +117,7 @@ body {
   border-radius: 0;
 }
 
-.jumbotron #carouselExampleIndicators img{
+.jumbotron #carouselExampleIndicators img {
   height: 30rem;
 }
 
@@ -145,7 +145,6 @@ h3.heading {
   padding-bottom: 0.4rem;
 }
 
-
 /*  CONTACT SECTION */
 .fixed {
   background-image: url(img/apple.jpg);
@@ -157,73 +156,72 @@ h3.heading {
   padding: 7rem 2rem;
 }
 
-.form h4{
+.form h4 {
   margin-top: 4.5rem;
 }
 
-#contact a{
-  padding: 0.75rem 0.65rem; 
+#contact a {
+  padding: 0.75rem 0.65rem;
 }
 
 /*SERVICES SECTION*/
 #clients img {
   display: block;
-  width: 16rem; 
+  width: 16rem;
   height: 12rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-#clients h4{
+#clients h4 {
   font-size: 1rem;
   padding-top: 0.75rem;
   text-align: center;
   color: #505962;
 }
 
-#clients p{
+#clients p {
   position: relative;
-  top: -90%; 
+  top: -90%;
   text-align: center;
   list-style: none;
-  margin-bottom: -10rem; 
+  margin-bottom: -10rem;
   visibility: hidden;
   color: #111111;
   font-weight: bold;
-  
 }
 
-#clients ul{
+#clients ul {
   position: relative;
-  top: -12%; 
+  top: -12%;
   text-align: center;
   list-style: none;
-  right: 8%; 
+  right: 5%;
   visibility: hidden;
 }
 
-#clients .service-block:hover p, 
-#clients .service-block:hover ul{
+#clients .service-block:hover p,
+#clients .service-block:hover ul {
   visibility: visible;
 }
 
-#clients .service-block:hover img{
+#clients .service-block:hover img {
   opacity: 0.1;
-  border-color: #D9534F;
+  border-color: #d9534f;
   transition: all 0.35s ease-out;
 }
 
-#clients .service-block img{
+#clients .service-block img {
   border: 5px #fff solid;
 }
 
 /*  AREA SECTION  */
-#area img{
-  width: 90%; 
-  height: 100%; 
+#area img {
+  width: 90%;
+  height: 100%;
 }
 
-#area li{
+#area li {
   margin-top: auto;
   margin-bottom: auto;
   font-size: 1.5rem;
@@ -265,24 +263,24 @@ hr.socket {
 @media (max-width: 1025px) {
   /*CLIENT SECTION*/
   #clients img {
-    width: 20rem; 
+    width: 20rem;
     height: 12rem;
   }
-  #footer a{
+  #footer a {
     font-size: 0.85rem;
   }
 
   /*  CONTACT SECTION */
-  .form h4{
+  .form h4 {
     margin-top: 3rem;
   }
 
-  #contact a{
+  #contact a {
     font-size: 0.75rem;
-    padding: 0.75rem 0.65rem; 
+    padding: 0.75rem 0.65rem;
   }
 
-  #contact #btnService{
+  #contact #btnService {
     display: none;
   }
 }
@@ -290,11 +288,11 @@ hr.socket {
 /*  IPAD  */
 @media (max-width: 991px) {
   /* Top contact text and navigation*/
-  #home p{
-    margin: 0.225rem 0.225rem; 
+  #home p {
+    margin: 0.225rem 0.225rem;
     font-size: 0.75rem;
   }
-  .navbar{
+  .navbar {
     margin-top: 1rem;
   }
   /* Landing Section */
@@ -302,8 +300,8 @@ hr.socket {
     font-size: 3rem;
     letter-spacing: 0.15rem;
     padding-bottom: 5rem;
-    width: 80%; 
-    left: 10%; 
+    width: 80%;
+    left: 10%;
   }
 
   .btn-lg {
@@ -312,7 +310,7 @@ hr.socket {
   }
 
   /* ABOUT US SECTION STYLING */
-  .narrow img{
+  .narrow img {
     margin-bottom: 2rem;
   }
 
@@ -324,38 +322,49 @@ hr.socket {
   }
 
   /*  CONTACT SECTION STYLING */
-  .form h4{
+  .form h4 {
     margin-top: 4rem;
     font-size: medium;
   }
 
   /*CLIENT SECTION*/
   #clients img {
-    width: 12rem; 
+    width: 12rem;
     height: 8rem;
   }
 
-  /*  AREA SECTION  */
-  #area img{
-    width: 90%; 
-    height: 100%; 
+  #clients p {
+    font-size: 0.8rem;
+    top: -85%;
+    margin-bottom: -5rem;
   }
 
-  #area li{
+  #clients ul {
+    font-size: 0.5rem;
+    top: -30%;
+    right: 10%;
+  }
+
+  /*  AREA SECTION  */
+  #area img {
+    width: 90%;
+    height: 100%;
+  }
+
+  #area li {
     font-size: 0.95rem;
   }
-  
-  #footer a{
+
+  #footer a {
     font-size: 0.65rem;
   }
 }
 
-
 /*  IPHONE  */
 @media (max-width: 767px) {
   /* Landing Section */
-  .caption{
-    top: 25%; 
+  .caption {
+    top: 25%;
   }
   .caption h1 {
     font-size: 1.7rem;
@@ -384,14 +393,13 @@ hr.socket {
     display: none;
   }
 
-  .narrow button{
-    padding: 1rem 0.75rem; 
+  .narrow button {
+    padding: 1rem 0.75rem;
   }
 
-  .narrow img{
+  .narrow img {
     margin-bottom: 4.9rem;
   }
-
 
   /* GALLARY SECTION STYLING */
   .jumbotron {
@@ -400,38 +408,38 @@ hr.socket {
     border-radius: 0;
   }
 
-  .jumbotron #carouselExampleIndicators img{
+  .jumbotron #carouselExampleIndicators img {
     height: 18rem;
   }
 
-    /*  CONTACT SECTION */
-    .form h4{
-      margin-top: 0rem;
-      margin-bottom: -8rem;
-    }
-  
-    #contact a{
-      display: none;
-    }
+  /*  CONTACT SECTION */
+  .form h4 {
+    margin-top: 0rem;
+    margin-bottom: -8rem;
+  }
+
+  #contact a {
+    display: none;
+  }
 
   /*SERVICES SECTION*/
   #clients img {
-    width: 16rem; 
+    width: 16rem;
     height: 12rem;
   }
 
   /*  AREA SECTION  */
-  #area img{
-    width: 100%; 
-    height: 100%; 
-    margin: 0.1rem auto; 
+  #area img {
+    width: 100%;
+    height: 100%;
+    margin: 0.1rem auto;
   }
 
-  #area li{
+  #area li {
     font-size: 0.95rem;
   }
 
-  #footer a{
+  #footer a {
     font-size: 1rem;
   }
 }

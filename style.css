@@ -14,10 +14,12 @@ body {
 }
 
 /* NAVIGATION */
-/* background fading the bar*/
+/* background fading the bar
+  background: rgba(0, 0, 0, 0.85);
+*/
 #home p {
-  margin: 0.225rem 0.225rem;
   font-size: 1rem;
+  padding-top: 0.5rem;
 }
 
 .navbar {
@@ -26,7 +28,7 @@ body {
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   background: rgba(0, 0, 0, 0.6) !important;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -289,11 +291,11 @@ hr.socket {
 @media (max-width: 991px) {
   /* Top contact text and navigation*/
   #home p {
-    margin: 0.225rem 0.225rem;
     font-size: 0.75rem;
+    padding-top: 0.25rem;
   }
   .navbar {
-    margin-top: 1rem;
+    margin-top: 1.35rem;
   }
   /* Landing Section */
   .caption h1 {

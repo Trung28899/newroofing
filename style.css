@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #505962;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+
+/* NAVIGATION */
+/* background fading the bar*/
+#home p{
+  margin: 0.225rem 0.225rem; 
+  font-size: 1rem;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6) !important;
+  margin-top: 1.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-brand img {
+  background: whitesmoke;
+  height: 3rem;
+  width: 10rem;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
+
+/* LANDING PAGE */
+.home-inner {
+  background-image: url(img/computers.jpg);
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 20%;
+  color: white;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.caption h1 {
+  position: relative;
+  left: 25%;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+  width: 50%;
+  text-align: center;
+}
+.caption h3 {
+  font-size: 1.75rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+  margin-left: 0.6rem;
+}
+
+/* ABOUT US SECTION STYLING */
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+
+.narrow h4 {
+  margin-right: 4rem;
+  font-size: 1.2rem;
+}
+
+.narrow a{
+  padding: 1rem 0.75rem; 
+}
+
+.narrow img{
+  margin-bottom: 4.9rem;
+}
+
+/* GALLERY SECTION STYLING */
+.jumbotron {
+  margin-bottom: 0;
+  padding: 3rem 16rem;
+  border-radius: 0;
+}
+
+.jumbotron #carouselExampleIndicators img{
+  height: 30rem;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #1ebba3;
+  margin: 0 auto 2rem;
+}
+
+.feature svg.svg-inline--fa {
+  color: #1ebba3;
+}
+
+.feature h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: 0.4rem;
+}
+
+
+/*  CONTACT SECTION */
+.fixed {
+  background-image: url(img/apple.jpg);
+  z-index: -1;
+}
+.dark {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 7rem 2rem;
+}
+
+.form h4{
+  margin-top: 4.5rem;
+}
+
+#contact a{
+  padding: 0.75rem 0.65rem; 
+}
+
+/*SERVICES SECTION*/
+#clients img {
+  display: block;
+  width: 16rem; 
+  height: 12rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#clients h4{
+  font-size: 1rem;
+  padding-top: 0.75rem;
+  text-align: center;
+  color: #505962;
+}
+
+#clients p{
+  position: relative;
+  top: -90%; 
+  text-align: center;
+  list-style: none;
+  margin-bottom: -10rem; 
+  visibility: hidden;
+  color: #111111;
+  font-weight: bold;
+  
+}
+
+#clients ul{
+  position: relative;
+  top: -12%; 
+  text-align: center;
+  list-style: none;
+  right: 8%; 
+  visibility: hidden;
+}
+
+#clients .service-block:hover p, 
+#clients .service-block:hover ul{
+  visibility: visible;
+}
+
+#clients .service-block:hover img{
+  opacity: 0.1;
+  border-color: #D9534F;
+  transition: all 0.35s ease-out;
+}
+
+#clients .service-block img{
+  border: 5px #fff solid;
+}
+
+/*  AREA SECTION  */
+#area img{
+  width: 90%; 
+  height: 100%; 
+}
+
+#area li{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1.5rem;
+}
+
+/*FOOTER SECTION*/
+footer {
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
+}
+
+footer img {
+  height: 3rem;
+  margin: 1.5rem 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem 0.5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+  color: #1ebba3 !important;
+}
+
+hr.socket {
+  width: 100%;
+  border-top: 0.2rem solid #666b71;
+  margin-top: 2rem;
+}
+
+/*  IPAD Pro*/
+@media (max-width: 1025px) {
+  /*CLIENT SECTION*/
+  #clients img {
+    width: 20rem; 
+    height: 12rem;
+  }
+  #footer a{
+    font-size: 0.85rem;
+  }
+
+  /*  CONTACT SECTION */
+  .form h4{
+    margin-top: 3rem;
+  }
+
+  #contact a{
+    font-size: 0.75rem;
+    padding: 0.75rem 0.65rem; 
+  }
+
+  #contact #btnService{
+    display: none;
+  }
+}
+
+/*  IPAD  */
+@media (max-width: 991px) {
+  /* Top contact text and navigation*/
+  #home p{
+    margin: 0.225rem 0.225rem; 
+    font-size: 0.75rem;
+  }
+  .navbar{
+    margin-top: 1rem;
+  }
+  /* Landing Section */
+  .caption h1 {
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 5rem;
+    width: 80%; 
+    left: 10%; 
+  }
+
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  /* ABOUT US SECTION STYLING */
+  .narrow img{
+    margin-bottom: 2rem;
+  }
+
+  /* GALLARY SECTION STYLING */
+  .jumbotron {
+    margin-bottom: 0;
+    padding: 2rem 1rem;
+    border-radius: 0;
+  }
+
+  /*  CONTACT SECTION STYLING */
+  .form h4{
+    margin-top: 4rem;
+    font-size: medium;
+  }
+
+  /*CLIENT SECTION*/
+  #clients img {
+    width: 12rem; 
+    height: 8rem;
+  }
+
+  /*  AREA SECTION  */
+  #area img{
+    width: 90%; 
+    height: 100%; 
+  }
+
+  #area li{
+    font-size: 0.95rem;
+  }
+  
+  #footer a{
+    font-size: 0.65rem;
+  }
+}
+
+
+/*  IPHONE  */
+@media (max-width: 767px) {
+  /* Landing Section */
+  .caption{
+    top: 25%; 
+  }
+  .caption h1 {
+    font-size: 1.7rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 5rem;
+  }
+
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  /* ABOUT US SECTION STYLING */
+  .narrow {
+    width: 95%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+    left: 2.5%;
+  }
+
+  .narrow h2 {
+    font-size: 1.2rem;
+  }
+
+  .narrow h4 {
+    display: none;
+  }
+
+  .narrow button{
+    padding: 1rem 0.75rem; 
+  }
+
+  .narrow img{
+    margin-bottom: 4.9rem;
+  }
+
+
+  /* GALLARY SECTION STYLING */
+  .jumbotron {
+    margin-bottom: 0;
+    padding: 1rem 0.1rem;
+    border-radius: 0;
+  }
+
+  .jumbotron #carouselExampleIndicators img{
+    height: 18rem;
+  }
+
+    /*  CONTACT SECTION */
+    .form h4{
+      margin-top: 0rem;
+      margin-bottom: -8rem;
+    }
+  
+    #contact a{
+      display: none;
+    }
+
+  /*SERVICES SECTION*/
+  #clients img {
+    width: 16rem; 
+    height: 12rem;
+  }
+
+  /*  AREA SECTION  */
+  #area img{
+    width: 100%; 
+    height: 100%; 
+    margin: 0.1rem auto; 
+  }
+
+  #area li{
+    font-size: 0.95rem;
+  }
+
+  #footer a{
+    font-size: 1rem;
+  }
+}
+
+/*  SMALL PHONE EDITION, IPHONE 5  */
+@media (max-width: 325px) {
+  /* Landing Section */
+  .caption h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 2rem;
+  }
+
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/*  IPHONE 5/SE */
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

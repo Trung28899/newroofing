@@ -1,3 +1,77 @@
+<?php
+	function checkDataPresent($field){
+		if(filter_has_var(INPUT_POST, $field)){
+			if($field === "name"){
+				global $name; 
+				$name = htmlspecialchars($_POST['name']);
+			} else if($field === "phoneNumber"){
+				global $phoneNumber; 
+				$phoneNumber = htmlspecialchars($_POST['phoneNumber']); 
+			} else if($field === "email"){
+				global $email; 
+				$email = htmlspecialchars($_POST['email']); 
+			} else if($field === "address"){
+				global $address; 
+				$address = htmlspecialchars($_POST['address']); 
+			} else if($field === "postal"){
+				global $postal; 
+				$postal = htmlspecialchars($_POST['postal']); 
+			} else if($field === "message"){
+				global $message; 
+				$message = htmlspecialchars($_POST['message']); 
+			}
+		}
+	}
+
+	// input assigning
+	checkDataPresent("name"); 
+	checkDataPresent("phoneNumber"); 
+	checkDataPresent("email"); 
+	checkDataPresent("address"); 
+	checkDataPresent("postal"); 
+	checkDataPresent("message");
+
+	// Email back-end Validation
+	if(isset($email)){
+		if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+			global $bufferStatus; 
+			$bufferStatus = "Invalid Email. Please try again !"; 
+		} else {
+			global $message; 
+			global $messageClient; 
+			global $toClient; 
+			// Message for mail() function
+			$messageMail = "<p>Customer Name: " . $name . "\r\n</p>";
+			$messageMail .= "<p>Customer Phone Number: " . $phoneNumber . "\r\n</p>"; 
+			$messageMail .= "<p>Customer Email: " . $email . "\r\n</p>";
+			$messageMail .= "<p>Customer Address: " . $address . "\r\n</p>";
+			$messageMail .= "<p>Customer Postal Code: " . $postal . "\r\n</p>";
+			$messageMail .= "<p>Message: " . $message . "\r\n</p>";
+			$messageClient = "<p>Dear potential Customer, </p>";
+			$messageClient .= "<p>&emsp; We have received your contact form via thenewroofing.ca. Thank you for considering our service !\r\n</p>";
+			$messageClient .= "<p>&emsp; We will contact you shortly within 48 hours. \r\n</p>";
+			$messageClient .= "<p>Regards, \r\n</p><br>"; 
+			$messageClient .= "<h4>New Roofing Team</h4>"; 
+			$messageClient .= "<strong>Email: datnguyen7@hotmail.com</strong><br>";
+			$messageClient .= "<strong>Phone Numer: +1 416-710-5010</strong>";
+			$toClient = $email; 
+		}
+	}
+
+	// Parameters for function mail() under in html
+	$to = "trung28899@gmail.com";
+	$subject = "Potential customer from thenewroofing.ca"; 
+	$subjectClient = "Thank you for considering our roofing service"; 
+	// Headers have to keep its format
+	$headers =  'MIME-Version: 1.0' . "\r\n"; 
+	$headers .= 'From: thenewroofing.ca <trevTrinh@gmail.com>' . "\r\n";
+	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";  
+	
+	$headersClient =  'MIME-Version: 1.0' . "\r\n"; 
+	$headersClient .= 'From: thenewroofing.ca <datnguyen7@gmail.com>' . "\r\n";
+	$headersClient .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -184,6 +258,15 @@
 				<div class="col-md-4">
 					<h3 class="heading">Contact Us Today!</h3>
 					<div class="heading-underline"></div>
+					<?php 
+						if(isset($bufferStatus)){
+							echo "<span class='badge badge-pill badge-danger'>" . $bufferStatus . "</span>";
+						} else if (isset($email) && (!isset($bufferStatus))){
+							echo "<span class='badge badge-pill badge-success'> Message Sent Sucessfully!</span>"; 
+							mail($to, $subject, $messageMail, $headers);
+							mail($toClient, $subjectClient, $messageClient, $headersClient);
+						}
+					?>
 				</div>
 
 				<div class="row justify-content-center form">
@@ -199,36 +282,36 @@
 					</div>
 					<div class="col-md-1"></div>
 					<div class="col-md-5">
-						<form class="mx-auto" id="form">
+						<form class="mx-auto" id="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact">
 							<div class="form-row">
 							  <div class="form-group col-md-6">
 								<label for="inputName">Name *</label>
-								<input type="name" class="form-control" id="inputEmail4">
+								<input required type="name" name="name" class="form-control" id="inputEmail4">
 							  </div>
 							  <div class="form-group col-md-6">
-								<label for="inputEmail">Phone Number</label>
-								<input type="phone" class="form-control" id="inputPhoneNumber" placeholder="888-888-8888">
+								<label for="inputEmail">Phone Number *</label>
+								<input required type="phone" name="phoneNumber" class="form-control" id="inputPhoneNumber" placeholder="888-888-8888">
 							  </div>
 							</div>
 							<div class="form-group">
-							  <label for="inputEmail">Email</label>
-							  <input type="text" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+							  <label for="inputEmail">Email*</label>
+							  <input required type="email" name="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
 							</div>
 						
 							<div class="form-row">
 							  <div class="form-group col-md-6">
-								<label for="inputCity">Address</label>
-								<input type="text" class="form-control" id="inputAddress" placeholder="123 Main Street">
+								<label for="inputCity">Address *</label>
+								<input required type="text" name="address" class="form-control" id="inputAddress" placeholder="123 Main Street">
 							  </div>
 							  
 							  <div class="form-group col-md-6">
-								<label for="inputZip">Postal Code</label>
-								<input type="text" class="form-control" id="inputZip">
+								<label for="inputZip">Postal Code *</label>
+								<input required type="text" name="postal" class="form-control" id="inputZip">
 							  </div>
 
 							  <div class="form-group col-md-12">
-								<label for="exampleFormControlTextarea1">Message</label>
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								<label for="exampleFormControlTextarea1">Message *</label>
+								<textarea required class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
 							  </div>
 
 							</div>

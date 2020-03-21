@@ -1,4 +1,7 @@
 <?php
+	require('config/config.php'); 
+	require('config/db.php'); 
+
 	function checkDataPresent($field){
 		if(filter_has_var(INPUT_POST, $field)){
 			if($field === "name"){
@@ -69,7 +72,7 @@
 	
 	$headersClient =  'MIME-Version: 1.0' . "\r\n"; 
 	$headersClient .= 'From: thenewroofing.ca <datnguyen7@gmail.com>' . "\r\n";
-	$headersClient .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";  
+	$headersClient .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 ?>
 
 <!DOCTYPE html>
@@ -265,6 +268,13 @@
 							echo "<span class='badge badge-pill badge-success'> Message Sent Sucessfully!</span>"; 
 							mail($to, $subject, $messageMail, $headers);
 							mail($toClient, $subjectClient, $messageClient, $headersClient);
+
+							$query = "INSERT INTO customers(name, phoneNumber, email, address, postal, message) VALUES('$name', '$phoneNumber', '$email', '$address', '$postal', '$message')"; 		
+							if(mysqli_query($conn, $query)){
+								header('Location'. ROOT_URL. ''); 
+							} else {
+								echo "Error". mysqli_error($conn); 
+							}
 						}
 					?>
 				</div>

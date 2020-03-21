@@ -55,14 +55,14 @@
 			$messageClient .= "<p>&emsp; We will contact you shortly within 48 hours. \r\n</p>";
 			$messageClient .= "<p>Regards, \r\n</p><br>"; 
 			$messageClient .= "<h4>New Roofing Team</h4>"; 
-			$messageClient .= "<strong>Email: datnguyen7@hotmail.com</strong><br>";
+			$messageClient .= "<strong>Email: Newroofing7@gmail.com</strong><br>";
 			$messageClient .= "<strong>Phone Numer: +1 416-710-5010</strong>";
 			$toClient = $email; 
 		}
 	}
 
 	// Parameters for function mail() under in html
-	$to = "trung28899@gmail.com";
+	$to = "newroofing7@gmail.com";
 	$subject = "Potential customer from thenewroofing.ca"; 
 	$subjectClient = "Thank you for considering our roofing service"; 
 	// Headers have to keep its format
@@ -71,7 +71,7 @@
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";  
 	
 	$headersClient =  'MIME-Version: 1.0' . "\r\n"; 
-	$headersClient .= 'From: thenewroofing.ca <datnguyen7@gmail.com>' . "\r\n";
+	$headersClient .= 'From: thenewroofing.ca <Newroofing7@gmail.com>' . "\r\n";
 	$headersClient .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 ?>
 
@@ -92,7 +92,7 @@
     <!--Start Home Section-->
     <div id="home">
 		<div class="fixed-top">
-			<p class="text-white text-center bg-danger"> <i class="fas fa-phone-square"></i>&nbsp; &nbsp;+1 416-710-5010 &emsp; <i class="fas fa-envelope-square"></i>&nbsp; &nbsp; datnguyen7@hotmail.com</p>
+			<p class="text-white text-center bg-danger"> <i class="fas fa-phone-square"></i>&nbsp; &nbsp;+1 416-710-5010 &emsp; <i class="fas fa-envelope-square"></i>&nbsp; &nbsp; Newroofing7@gmail.com</p>
 		</div>
 	  <!--Start of Navigation-->
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -178,7 +178,7 @@
 						<h4 class="text-center text-danger">+1 416-710-5010</h4>
 					  </div>
 					  <div class="column-sm-6">
-						<h4 class="text-center text-danger">datnguyen7@gmail.com</h4>
+						<h4 class="text-center text-danger">Newroofing7@gmail.com</h4>
 					  </div>
 				  </div> 
 				  <br>
@@ -282,7 +282,7 @@
 				<div class="row justify-content-center form">
 					<div class="col-md-3 cf">
 						<h4>
-							For your convenience, you can request quotes by calling <span class="text-danger"> +1 416-710-5010 </span> or email: <span class="text-danger">datnguyen7@gmail.com </span>
+							For your convenience, you can request quotes by calling <span class="text-danger"> +1 416-710-5010 </span> or email: <span class="text-danger">Newroofing7@gmail.com </span>
 							 or through our online request form and we will arrange to meet you at your location to provide you with a free estimate.
 						</h4>
 						<br>
@@ -542,7 +542,7 @@
 					<img src="img/nuno.PNG">
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi et nemo voluptate perferendis. Odit non corrupti cupiditate illum libero?</p>
 					<strong>Contact Info</strong>
-					<p class="text-white text-center">+1 416-710-5010 <br> datnguyen7@hotmail.com</p>
+					<p class="text-white text-center">+1 416-710-5010 <br> Newroofing7@gmail.com</p>
 
 				</div>
 

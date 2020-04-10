@@ -208,15 +208,16 @@ h3.heading {
 
 #clients .service-block:hover p,
 #clients .service-block:hover ul {
-  visibility: visible;
+  visibility: hidden;
 }
 
+/*
 #clients .service-block:hover img {
   opacity: 0.1;
   border-color: #d9534f;
   transition: all 0.35s ease-out;
 }
-
+*/
 #clients .service-block img {
   border: 5px #fff solid;
 }

@@ -171,7 +171,8 @@
 			  <div class="col-xl-7">
 				  <h2 class="text-center">The New Roofing Company</h2>
 				  <br>
-				  <h2 class="text-md-left text-danger">Nihil natus eligendi quam veniam minus ipsa, reiciendis ex quod nesciunt inventore rem. Earum iure tenetur itaque? Tempora, quas nostrum!</h2>
+				  <h2 class="text-md-left text-danger">Toronto Roofer is a locally owned and operated roofing contractor based out of Toronto.
+Our 1st priority is securing your family’s roof.</h2>
 				  <br> 
 				  <div class="row">
 					  <div class="column-sm-6">
@@ -182,14 +183,14 @@
 					  </div>
 				  </div> 
 				  <br>
-				  <p class="text-left text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae libero delectus harum necessitatibus illum at numquam eaque ratione ullam, repellendus ut enim corporis eligendi expedita. Aliquid praesentium quaerat vitae voluptatum.</p>
-				  <p class="text-left text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab id voluptatem nostrum, harum inventore architecto, veniam vel beatae numquam eligendi esse possimus ut ullam laboriosam? Inventore voluptatum maxime possimus. Doloremque.</p>
+				  <p class="text-left text-muted">Toronto Roofer offers a number of roofing services to address the needs of residents in the local area.</p>
+				  <p class="text-left text-muted">New roof installation done right is important in ensuring that your roof will last for years to come and will withstand the many types of weather we experience here in the Toronto area.</p>
 
 			  </div>
 			  <div class="col-xl-5">
 				<img src="img/roof.jpg" alt="..." class="img-fluid img-thumbnail rounded">
 				
-				<p class="text-left text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae libero delectus harum necessitatibus illum at numquam eaque ratione ullam, repellendus ut enim corporis eligendi expedita. Aliquid praesentium quaerat vitae voluptatum.</p>
+				<p class="text-left text-muted">Whether you need emergency roof repair in Toronto, or new roofing in Mississauga or anywhere in the GTA. We have the skills and expertise to get you the best roof over your head. We’ve been operating since our first roof repair in 2009 and continue to be the preferred roofing company for personal and commercial roofing needs. </p>
 			  </div>
 		  </div>
 		  
@@ -385,7 +386,7 @@
 					</div>
 
 					<div class="col-md service-block">
-						<img src="img/row-1-2.jpg" alt="">
+						<img src="img/flat-roof.jpg" alt="">
 						<h4>Flat Roof</h4>
 						<p class="hoverText">
 							Service Listing 
@@ -443,7 +444,7 @@
 
 				<div class="row justify-content-md-center" id="service-2">
 					<div class="col-md service-block">
-						<img src="img/row-2-3.jpg" alt="">
+						<img src="img/skylight.jpg" alt="">
 						<h4>Skylight</h4>
 						<p class="hoverText text-center">
 							Service Listing 
@@ -456,7 +457,7 @@
 						</ul>
 					</div>
 					<div class="col-md service-block">
-						<img src="img/row-2-3.jpg" alt="">
+						<img src="img/roof-repairs.jpg" alt="">
 						<h4>Roof Repairs</h4>
 						<p class="hoverText text-center">
 							Service Listing 
@@ -469,7 +470,7 @@
 						</ul>
 					</div>
 					<div class="col-md service-block">
-						<img src="img/row-2-3.jpg" alt="">
+						<img src="img/soffit.png" alt="">
 						<h4>Soffits</h4>
 						<p class="hoverText text-center">
 							Service Listing 
@@ -540,7 +541,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-5 text-center">
 					<img src="img/nuno.PNG">
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi et nemo voluptate perferendis. Odit non corrupti cupiditate illum libero?</p>
+					<p>We get your Roof Done Right !</p>
 					<strong>Contact Info</strong>
 					<p class="text-white text-center">+1 416-710-5010 <br> Newroofing7@gmail.com</p>
 
